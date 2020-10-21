@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>入力ページ</title>
+    <meta lang="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+      <script>
+      $(function() {
+                    $('.js-button').click(function(){
+                        AjaxZip3.zip2addr('郵便番号1', '郵便番号2', '都道府県', '市区町村');
+                    });
+                });
+      </script>
+
+  </head>
+  <body>
+
+    <form method="POST"
+      action="mailto:nangokufox8@gamil.com">
+
+    <div h2>
+      <b>
+      商品・数量選択
+      </b>
+    </div>
+
+    <div>
+      <div class="box1">
+      <select>
+        <option value="R-1">R-1ドリンク</option>
+        <option value="R-1">R-1ヨーグルト</option>
+        <option value="LG21">LG21ドリンク</option>
+        <option value="LG21">LG21ヨーグルト</option>
+        <option value="ミルクで元気">ミルクで元気</option>
+        <option value="ロコケア">ロコケア</option>
+        <option value="グルコラ">グルコラ</option>
+      </select>
+      </div>
+    </div>
+
+
+    <select name="cnt">
+      <option value="0" selected></option>　/*　←初期値は「selected」を入れておく　*/
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+    </div>
+    
+    <p>
+    <div>
+      <div class="box2">
+      <select>
+        <option value="R-1">R-1ドリンク</option>
+        <option value="R-1">R-1ヨーグルト</option>
+        <option value="LG21">LG21ドリンク</option>
+        <option value="LG21">LG21ヨーグルト</option>
+        <option value="ミルクで元気">ミルクで元気</option>
+        <option value="ロコケア">ロコケア</option>
+        <option value="グルコラ">グルコラ</option>
+      </select>
+      </div>
+    </div>
+    </p>
+
+    <select name="cnt">
+      <option value="0" selected></option>　/*　←初期値は「selected」を入れておく　*/
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+
+    <p>
+    <div>
+      <div class="box3">
+      <select>
+        <option value="R-1">R-1ドリンク</option>
+        <option value="R-1">R-1ヨーグルト</option>
+        <option value="LG21">LG21ドリンク</option>
+        <option value="LG21">LG21ヨーグルト</option>
+        <option value="ミルクで元気">ミルクで元気</option>
+        <option value="ロコケア">ロコケア</option>
+        <option value="グルコラ">グルコラ</option>
+      </select>
+    </div>
+   </div>
+    </p>
+
+    <select name="cnt">
+      <option value="0" selected></option>　/*　←初期値は「selected」を入れておく　*/
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+
+    <hr class="cp_hr06" />
+
+<section class="contact table">
+<table>
+<tr>
+<th>郵便番号
+<td class="dotborder">
+<input id="post1" class="contact_zip contact_zip_left" type="text" name="郵便番号1" value=""  >
+ - <input id="post2" class="contact_zip contact_zip_right" type="text" name="郵便番号2" value=""  >
+<div class="js-button address_hyoji">住所表示</div>
+<!--<img class="js-button contact_button_jushohyoji" src="img/contact_button_address.jpg" alt="住所表示">-->
+<div>
+  <img class="js-button contact_button_jushohyoji" src="img/kensaku.jpg" width="100" height="100" alt="検索">
+</div>
+</td>
+</tr>
+
+<hr class="cp_hr06" />
+				
+<tr>
+<th>ご住所
+<td class="dotborder">都道府県
+<input id="address1" type="text" name="都道府県" value="" class="recruit_address contact_todofuken"  >
+<br />
+市区町村<input id="address2" type="text" name="市区町村" value="" class="recruit_address contact_shikuchouson"  >
+<br />番地・マンション名など<input id="address3" type="text" name="番地・マンション" value="" class="recruit_address contact_banchi">
+</td>
+</tr>
+</table>
+</section>
+
+<hr class="cp_hr06" />
+
+<div class="box4">
+  <label for="question"><b>備考欄</b></label>
+</div>
+  <P>
+       <textarea id="question" name="question" placeholder="受箱位置etc"></textarea>
+  </P>
+
+</form>
+
+<hr class="cp_hr06" />
+
+<p>
+    <div>
+    <input type="submit" value="  送信  ">
+    </div>
+</p>
+
+
+<p>
+    <div>
+      <input type="reset"  value="入力内容をリセット">
+    </div>
+</p>
+
+<p>
+    <div>
+    <button type="button" onclick="history.back()">戻る</button>
+    </div>
+</p>
+    
+
+
+  </body>
+</html>
